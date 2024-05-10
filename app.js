@@ -82,4 +82,12 @@ const duration75 = distance/75;
 
 
 //PART THREE: FUTURE EXPLORATION
+//Aplying function to do not repeat myself
 
+function getTripCalculation(speed, fuelEffic){
+    const fuelNeeded = totalDistance/fuelEffic;
+    const cost = fuelNeeded*cost;
+    const duration = distance/speed;
+
+
+}
