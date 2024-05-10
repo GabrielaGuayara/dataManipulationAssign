@@ -70,5 +70,16 @@ const fuelNeededAt55 = distance/fuelEffiAt55;
 const fuelCostAt55 = fuelNeededAt55 * cost;
 const duration55 = distance/55;
 
+//Calculation at traveling at an average of 60
+const fuelNeededAt60 = distance/fuelEffiAt60;
+const fuelCostAt60 = fuelNeededAt60 * cost;
+const duration60 = distance/60;
 
+//Calculation at traveling at an average of 75
+const fuelNeededAt75 = distance/fuelEffiAt55;
+const fuelCostAt75 = fuelNeededAt55 * cost;
+const duration75 = distance/75;
+
+
+//PART THREE: FUTURE EXPLORATION
 
