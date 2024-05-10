@@ -59,16 +59,21 @@ const fuelEffiAt75 = 23;
 const fuelNeededAt55 = distance/fuelEffiAt55;
 const fuelCostAt55 = fuelNeededAt55 * cost;
 const duration55 = distance/55;
+console.log(`The fuel needed at 55 miles is ${fuelNeededAt55.toFixed(2)}. The cost of the fuel is ${fuelCostAt55.toFixed(2)}, and the duration is ${duration55.toFixed(2)}`)
+
 
 //Calculation at traveling at an average of 60
 const fuelNeededAt60 = distance/fuelEffiAt60;
 const fuelCostAt60 = fuelNeededAt60 * cost;
 const duration60 = distance/60;
+console.log(`The fuel needed at 60 miles is ${fuelNeededAt60.toFixed(2)}. The cost of the fuel is ${fuelCostAt60.toFixed(2)}, and the duration is ${duration60.toFixed(2)} `)
+
 
 //Calculation at traveling at an average of 75
 const fuelNeededAt75 = distance/fuelEffiAt55;
 const fuelCostAt75 = fuelNeededAt55 * cost;
 const duration75 = distance/75;
+console.log(`The fuel needed at 75 miles is ${fuelNeededAt75.toFixed(2)}. The cost of the fuel is ${fuelCostAt75.toFixed(2)}, and the duration is ${duration75.toFixed(2)} `)
 
 
 //PART THREE: FUTURE EXPLORATION
@@ -81,7 +86,7 @@ function getTripCalculation(speed, fuelEffic){
 
     let isPossibleTheTrip = cost <= budget;
 
-    console.log(`At ${speed} miles per HTMLSourceElement. The fuel needed is ${fuelNeeded.toFixed(2)}. The total cost is ${totalcost.toFixed(2)}. The duration of the trip is ${duration.toFixed(2)}. Thus, the statement that the trip is possible is ${isPossibleTheTrip}` )
+    console.log(`At ${speed} miles per hour. The fuel needed is ${fuelNeeded.toFixed(2)}. The total cost is ${totalcost.toFixed(2)}. The duration of the trip is ${duration.toFixed(2)}. Thus, the statement that the trip is possible is ${isPossibleTheTrip}` )
 
 }
 
