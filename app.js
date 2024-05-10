@@ -20,13 +20,13 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-onsole.log(`The four number are valid according to the provided criteria is ${isValid}`)
+console.log(`The four number are valid according to the provided criteria is ${isValid}`)
 
 
 //PART 1: MATH PROBLEMS
 
 //Check five: all numbers are divisible by 5
-const isDivByFive = ((n1%5)==0)&&((n2%5)==0)&&((n3%5)==0)&&((n4%5)==0);
+const isDivByFive = (((n1%5)&&(n2%5)&&(n3%5)&&(n4%5))==0);
 
 //Check if the first number is greater than the last one
 const isGreaterThanTheFirt = n1>n4;
@@ -45,16 +45,6 @@ console.log(`The four number are valid according to the provided criteria is ${i
 /**
  * You are planning a cross-country road trip!
 The distance of the trip, in total, is 1,500 miles.
-Your car’s fuel efficiency is as follows:
-At 55 miles per hour, you get 30 miles per gallon.
-At 60 miles per hour, you get 28 miles per gallon.
-At 75 miles per hour, you get 23 miles per gallon.
-You have a fuel budget of $175.
-The average cost of fuel is $3 per gallon.
-Set up a program to answer the following questions:
-How many gallons of fuel will you need for the entire trip?
-Will your budget be enough to cover the fuel expense?
-How long will the trip take, in hours?
 Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip? 
  */
 //Declare variables
@@ -85,9 +75,18 @@ const duration75 = distance/75;
 //Aplying function to do not repeat myself
 
 function getTripCalculation(speed, fuelEffic){
-    const fuelNeeded = totalDistance/fuelEffic;
-    const cost = fuelNeeded*cost;
+    const fuelNeeded = distance/fuelEffic;
+    const totalcost = cost * fuelNeeded;
     const duration = distance/speed;
 
+    let isPossibleTheTrip = cost <= budget;
+
+    console.log(`At ${speed} miles per HTMLSourceElement. The fuel needed is ${fuelNeeded.toFixed(2)}. The total cost is ${totalcost.toFixed(2)}. The duration of the trip is ${duration.toFixed(2)}. Thus, the statement that the trip is possible is ${isPossibleTheTrip}` )
 
 }
+
+//Invoke functions
+getTripCalculation(55, fuelCostAt55)
+getTripCalculation(60, fuelCostAt60)
+getTripCalculation(75, fuelCostAt75)
+
