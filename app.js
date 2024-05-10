@@ -57,11 +57,18 @@ Will your budget be enough to cover the fuel expense?
 How long will the trip take, in hours?
 Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip? 
  */
-
+//Declare variables
 const distance = 1500;
 const budget = 175;
-let cost = 3.00;
+const cost = 3.00;
+const fuelEffiAt55 = 30;
+const fuelEffiAt60 = 28;
+const fuelEffiAt75 = 23;
 
+//Calculation at traveling at an average of 55
+const fuelNeededAt55 = distance/fuelEffiAt55;
+const fuelCostAt55 = fuelNeededAt55 * cost;
+const duration55 = distance/55;
 
 
 
